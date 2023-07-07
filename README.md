@@ -2,7 +2,7 @@
   <img src="https://github.com/KhomsiAdam/create-express-rest-ts/assets/9354045/dd0ae4f3-7558-4a0a-8292-0c897f34ba84" alt="QuickChat, Real Time Chat App"></img>
 </p>
 
-Real time chat app build with Next.js 13. The application allows users to engage in instant messaging, after connecting with your Google account you can add friends by e-mail.
+Real time chat app built with Next.js 13. The application allows users to engage in instant messaging, after connecting with your Google account you can add friends by e-mail.
 
 Demo at: https://livequickchat.vercel.app. You can open two browsers with different accounts to try the application for yourself.
 

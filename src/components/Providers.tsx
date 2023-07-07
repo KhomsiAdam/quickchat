@@ -24,7 +24,7 @@ const Providers: FC<ProvidersProps> = ({ children }) => {
   return (
     <>
       <Toaster position='top-center' reverseOrder={false} />
-      <ThemeProvider attribute='class'>{children}</ThemeProvider>
+      <ThemeProvider defaultTheme='light' attribute='class'>{children}</ThemeProvider>
     </>
   )
 }
