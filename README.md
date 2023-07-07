@@ -21,7 +21,7 @@ git clone https://github.com/KhomsiAdam/quickchat
 ```bash
 pnpm install
 ```
-3. Configure the necessary environment variables in `.env`.
+3. Configure the necessary environment variables in `.env.local`.
 
 4. Start the server:
 ```bash
