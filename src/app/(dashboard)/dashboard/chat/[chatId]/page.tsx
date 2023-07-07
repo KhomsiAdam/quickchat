@@ -80,7 +80,7 @@ const page = async ({ params }: PageProps) => {
   return (
     <div className='flex-1 justify-between flex flex-col h-full max-h-[calc(100vh-6rem)]'>
       <div className='flex justify-between py-3 border-b-2 border-gray-200 sm:items-center'>
-        <div className='relative flex items-center space-x-4'>
+        <div className='relative flex items-center px-8 space-x-4'>
           <div className='relative'>
             <div className='relative w-8 h-8 sm:w-12 sm:h-12'>
               <Image
@@ -95,12 +95,12 @@ const page = async ({ params }: PageProps) => {
 
           <div className='flex flex-col leading-tight'>
             <div className='flex items-center text-xl'>
-              <span className='mr-3 font-semibold text-gray-700'>
+              <span className='mr-3 font-semibold text-gray-700 dark:text-white'>
                 {chatPartner.name}
               </span>
             </div>
 
-            <span className='text-sm text-gray-600'>{chatPartner.email}</span>
+            <span className='text-sm text-gray-600 dark:text-[#A1A1AA]'>{chatPartner.email}</span>
           </div>
         </div>
       </div>

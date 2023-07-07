@@ -50,8 +50,8 @@ const FriendRequestSidebarOptions: FC<FriendRequestSidebarOptionsProps> = ({
   return (
     <Link
       href='/dashboard/requests'
-      className='flex items-center p-2 text-sm font-semibold leading-6 text-gray-700 rounded-md hover:text-indigo-600 hover:bg-gray-50 group gap-x-3'>
-      <div className='text-gray-400 border-gray-200 group-hover:border-indigo-600 group-hover:text-indigo-600 flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium bg-white'>
+      className='flex items-center p-2 text-sm font-semibold leading-6 text-gray-700 rounded-md dark:text-white hover:text-secondary-600 hover:bg-gray-50 dark:hover:bg-transparent dark:hover:text-primary-600 group gap-x-3'>
+      <div className='text-gray-400 border-gray-200 group-hover:border-secondary-600 group-hover:text-secondary-600 dark:group-hover:border-primary-600 dark:group-hover:text-primary-600 flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium'>
         <User className='w-4 h-4' />
       </div>
       <p className='truncate'>Friend requests</p>

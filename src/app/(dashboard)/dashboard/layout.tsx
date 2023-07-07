@@ -56,9 +56,9 @@ const Layout = async ({ children }: LayoutProps) => {
         />
       </div>
 
-      <div className='flex-col hidden w-full h-full max-w-xs px-6 overflow-y-auto bg-white border-r border-gray-200 md:flex grow gap-y-5'>
+      <div className='flex-col hidden w-full h-full max-w-xs px-6 overflow-y-auto border-r border-gray-200 md:flex grow gap-y-5'>
         <Link href='/dashboard' className='flex items-center justify-center shrink-0'>
-          <Icons.Logo className='w-auto h-8 text-indigo-600' />
+          <Icons.Logo size={200} />
         </Link>
 
         {friends.length > 0 ? (
@@ -84,8 +84,8 @@ const Layout = async ({ children }: LayoutProps) => {
                     <li key={option.id}>
                       <Link
                         href={option.href}
-                        className='flex gap-3 p-2 text-sm font-semibold leading-6 text-gray-700 rounded-md hover:text-indigo-600 hover:bg-gray-50 group'>
-                        <span className='text-gray-400 border-gray-200 group-hover:border-indigo-600 group-hover:text-indigo-600 flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium bg-white'>
+                        className='flex gap-3 p-2 text-sm font-semibold leading-6 text-gray-700 rounded-md dark:text-white hover:text-secondary-600 hover:bg-gray-50 dark:hover:bg-transparent dark:hover:text-primary-600 group'>
+                        <span className='text-gray-400 border-gray-200 group-hover:border-secondary-600 group-hover:text-secondary-600 dark:group-hover:border-primary-600 dark:group-hover:text-primary-600 flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium'>
                           <Icon className='w-4 h-4' />
                         </span>
 
@@ -106,7 +106,7 @@ const Layout = async ({ children }: LayoutProps) => {
 
             <li className='flex items-center mt-auto -mx-6'>
               <div className='flex items-center flex-1 px-6 py-3 text-sm font-semibold leading-6 text-gray-900 gap-x-4'>
-                <div className='relative w-8 h-8 bg-gray-50'>
+                <div className='relative w-8 h-8'>
                   <Image
                     fill
                     referrerPolicy='no-referrer'
@@ -118,7 +118,7 @@ const Layout = async ({ children }: LayoutProps) => {
 
                 <span className='sr-only'>Your profile</span>
                 <div className='flex flex-col'>
-                  <span aria-hidden='true'>{session.user.name}</span>
+                  <span aria-hidden='true' className='dark:text-white'>{session.user.name}</span>
                   <span className='text-xs text-zinc-400' aria-hidden='true'>
                     {session.user.email}
                   </span>
@@ -131,7 +131,7 @@ const Layout = async ({ children }: LayoutProps) => {
         </nav>
       </div>
 
-      <aside className='container w-full max-h-screen py-16 md:py-12'>
+      <aside className='w-full max-h-screen py-16 md:py-12'>
         {children}
       </aside>
     </div>

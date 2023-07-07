@@ -8,7 +8,7 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-slate-900 text-white hover:bg-slate-800',
+        default: 'text-white transition-all duration-200 bg-gradient-to-r from-secondary-500 via-[#6294F9] to-primary-500 bg-[length:150%_100%] bg-left-top hover:bg-right-bottom',
         ghost: 'bg-transparent hover:text-slate-900 hover:bg-slate-200',
       },
       size: {
@@ -50,19 +50,3 @@ const Button: FC<ButtonProps> = ({
 }
 
 export default Button
-
-
-
-
-
-
-interface PersonInterface {
-  age: number
-  name: string
-  job?: boolean
-}
-
-const Person: PersonInterface = {
-  age: 14,
-  name: 'John'
-}
