@@ -4,7 +4,7 @@
 
 Real time chat app build with Next.js 13. The application allows users to engage in instant messaging, after connecting with your Google account you can add friends by e-mail.
 
-You can open two browsers with different accounts to try the application for yourself.
+Demo at: https://livequickchat.vercel.app. You can open two browsers with different accounts to try the application for yourself.
 
 Key Features:
 - Real-time messaging.
